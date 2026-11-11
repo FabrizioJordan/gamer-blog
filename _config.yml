@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "es"
-title                    : "fjordan.io"
-title_separator          : "-"
+title                    : "Gamer Blog"
+title_separator          : "|"
 name                     : "Fabricio Jordan"
-description              : "En este blog vas a poder leer sobre tecnología, informática y sobre todo, programación."
-url                      : # "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "fabriziojordan/fjordan-blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+description              : "En este blog vas a poder encontrar guías, análisis y contenido sobre videojuegos."
+url                      : "https://FabrizioJordan.github.io" # "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/gamer-blog" # the subpath of your site, e.g. "/blog"
+repository               : "fabriziojordan/gamer-blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : # "/assets/images/letters-3.png"
 favicon                  : "/assets/images/icon.svg"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -102,11 +102,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Fabricio Jordán"
-  avatar           : "/assets/images/profile_v2.gif"
-  bio              : "- Programador Front End<br>- Amante del Open Source"
+  name             : "zFab21"
+  avatar           : "/assets/images/profile_v1.gif"
+  bio              : #"- Programador Front End<br>- Amante del Open Source"
   location         : "Montevideo" #"Doxed"
-  email            : "dev.fjordan@gmail.com"
+  email            : #"dev.fjordan@gmail.com"
   uri              : "fabriciojordan.vercel.app"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :

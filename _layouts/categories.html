@@ -34,7 +34,7 @@ layout: archive
         <h2 class="archive__subtitle m-0">{{ category[0] }}</h2>
         <div class="flex flex-col gap-4 entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in category.last %}
-            {% include archive-single.html type=page.entries_layout %}
+            {% include posts/archive-single.html type=page.entries_layout %}
           {% endfor %}
         </div>
       </section>

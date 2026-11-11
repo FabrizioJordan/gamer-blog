@@ -30,14 +30,8 @@ html {
 }
 
 html body {
-  background: oklch(0.27 0 0);
   margin-bottom: 0!important;
   padding-bottom: 147.375px
-}
-
-
-html body video{
-  max-width: 100%;
 }
 
 /*
@@ -56,7 +50,6 @@ html a:hover {
 
 html hr {
 /*   margin: 0.5em 0; */
-  width: 100%;
   border-top: 1px solid #373d48;
 }
 
@@ -100,10 +93,6 @@ html .h-120{
 
 html .w-120{
   width: 120px;
-}
-
-html .object-cover{
-  object-fit: cover;
 }
 
 html .rounded-semi{
@@ -337,7 +326,7 @@ html .layout--single .breadcrumbs .current{
 }
 
 html .breadcrumbs ol li .current{
-  
+
 }
 
 
@@ -430,22 +419,6 @@ html .main__post .page__inner-wrap{
   }
 }
 
-html .masthead{
-  border-bottom: 1px solid $border-color;
-}
-
-
-@media (min-width: 1024px){
-  html .home .masthead{
-    border-bottom: 0px;
-  }
-
-  html .home .masthead .masthead__inner-wrap{
-    border-bottom: 1px solid $border-color;
-    max-width: 80%
-  }
-}
-
 
 html body .sidebar.relative{
   height: unset;
@@ -498,27 +471,7 @@ html .author__urls-mobile-btn{
   border-radius: 6px;
 }
 
-@media (min-width: 1024px){
-  html .author__content{
-    gap: 0.5em; 
-  }
-}
 
-html .sidebar .author__name{
-  font-size: 1em;
-}
-
-html .home .sidebar .author__name{
-  font-size: 1.2em;
-  margin: 0px 0px 6px 0px;
-}
-
-@media (min-width: 1024px){
-  html .home .sidebar .author__name{
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-}
 
 html .home .sidebar .author__bio{
   margin: 0px;
@@ -564,7 +517,7 @@ html .page__inner-wrap .page__title{
 
 
 
-/* 
+/*
 ==========================================
 ====  ARCHIVE  ====
 ==========================================
@@ -614,28 +567,6 @@ html .home .archive__subtitle{
 }
 
 
-html .home .archive__item-title{
-  margin: 0.4em 0;
-  font-size: 1.1em;
-}
-
-html .archive__item-title-home{
-  margin: 0.6em 0;
-}
-
-html .archive__item-time-home{
-  margin: 0.7em 0;
-}
-
-html .home .archive__item-time-home{
-  margin: 0.4em 0;
-}
-
-
-html .archive__item-excerpt-home{
-  margin-bottom: 0.6em;
-}
-
 html .archive__item-tags a,
 html .archive__item-tags i{
   padding: 0.3em 0em;
@@ -658,21 +589,14 @@ html .taxonomy__index {
 
 
 
-/* 
+/*
 ==========================================
 ====  FOOTER  ====
 ==========================================
 */
 
 
-html .page__footer {
-  background: oklch(0.26 0 0);
-}
-
 html .page__footer footer {
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-top: 2em;
   padding: 0 1em 1em;
 }
 
@@ -689,3 +613,94 @@ html .footer__back-to-top{
   padding: 0px;
 }
 
+
+/* ==========================================================================
+   GAMER BLOG - HEADER
+   ========================================================================== */
+
+.site-header {
+  margin: 0;
+}
+
+.site-header__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Branding */
+
+.site-branding {
+  margin-bottom: 1.5rem;
+}
+
+.site-branding__link {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 0.15rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-branding__title {
+  color: #16c8d1;
+  font-family: monospace;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.site-branding__author {
+  color: #aab8c8;
+  font-family: monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+}
+
+/* Navigation */
+
+.site-navigation {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 0.8rem;
+}
+
+.site-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation__item {
+  margin: 0;
+}
+
+.site-navigation__link {
+  display: block;
+  color: #aab8c8;
+  font-family: monospace;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    color: #16c8d1;
+    background: rgba(22, 200, 209, 0.08);
+    text-decoration: none;
+  }
+
+  &.is-active {
+    color: #16c8d1;
+    background: rgba(22, 200, 209, 0.12);
+    box-shadow: inset 0 -2px 0 #16c8d1;
+  }
+}

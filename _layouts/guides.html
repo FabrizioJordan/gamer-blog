@@ -1,0 +1,78 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign guide_posts = site.categories["Guía"] %}
+
+{% if guide_posts and guide_posts.size > 0 %}
+
+  <!-- Filtros por tags -->
+  <ul class="taxonomy__index">
+
+    <li>
+      <a href="#guides-list" class="text-cyan-300-hover is-active" data-guide-filter="all">
+        <strong>Todos</strong>
+        <span class="taxonomy__count">{{ guide_posts.size }}</span>
+      </a>
+    </li>
+
+    {% for tag in site.tags %}
+      {% assign matching_posts = tag.last | where_exp: "post", "post.categories contains 'Guía'" %}
+
+      {% if matching_posts.size > 0 %}
+        <li>
+          <a href="#guides-list" class="text-cyan-300-hover" data-guide-filter="{{ tag[0] | slugify }}">
+            <strong>{{ tag[0] }}</strong>
+            <span class="taxonomy__count">{{ matching_posts.size }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+  </ul>
+
+
+  <!-- Listado de guías -->
+  <div id="guides-list" class="flex flex-col gap-4 entries-{{ page.entries_layout | default: 'list' }}">
+
+    {% for post in guide_posts %}
+      <div class="guide-post" data-tags="{% for tag in post.tags %}{{ tag | slugify }} {% endfor %}">
+        {% include posts/archive-single.html type=page.entries_layout %}
+      </div>
+    {% endfor %}
+
+  </div>
+
+{% else %}
+
+  <p>Todavía no hay guías publicadas.</p>
+
+{% endif %}
+
+
+<!-- Filtrado de publicaciones -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filters = document.querySelectorAll("[data-guide-filter]");
+  const posts = document.querySelectorAll(".guide-post");
+
+  filters.forEach(filter => {
+    filter.addEventListener("click", event => {
+      event.preventDefault();
+
+      const selectedTag = filter.dataset.guideFilter;
+
+      posts.forEach(post => {
+        const postTags = post.dataset.tags.trim().split(/\s+/);
+
+        post.hidden = selectedTag !== "all" && !postTags.includes(selectedTag);
+      });
+
+      filters.forEach(item => item.classList.remove("is-active"));
+      filter.classList.add("is-active");
+    });
+  });
+});
+</script>

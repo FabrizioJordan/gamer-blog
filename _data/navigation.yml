@@ -1,14 +1,13 @@
 main:
-  - title: "home"
+  - title: "Inicio"
     url: /
-    icon: "/assets/images/nav_icons/home.svg"
-  - title: "posts"
-    url: /year-archive/
-    icon: "/assets/images/nav_icons/posts.svg"
-  - title: "categorias"
-    url: /categories/
-    icon: "/assets/images/nav_icons/categories.svg"
-  - title: "tags"
-    url: /tags/
-    icon: "/assets/images/nav_icons/tags.svg"
-
+    #icon: "/assets/images/nav_icons/home.svg"
+  - title: "Guías"
+    url: /guides/
+    #icon: "/assets/images/nav_icons/posts.svg"
+  - title: "Tutoriales"
+    url: /tutorials/
+    #icon: "/assets/images/nav_icons/categories.svg"
+  - title: "Reseñas"
+    url: /reviews/
+    #icon: "/assets/images/nav_icons/tags.svg"

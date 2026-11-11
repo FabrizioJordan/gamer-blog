@@ -18,10 +18,9 @@ layout: default
 {% if page.url == "/" %}
 
   <!-- contenido home -->
-  <div id="main" role="main" class="main main__home">
-    {% include sidebar.html %}
+  <div id="main" role="main" class="main main__home file__archive">
 
-    <div class="archive mt-0">
+    <div class="archive mt-0 flex flex-col gap-0.5">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <h1 id="page-title" class="page__title page__title-home">{{ page.title }}</h1>
       {% endunless %}
@@ -32,15 +31,15 @@ layout: default
 {% else %}
 
   <!-- contenido normal -->
-  <div id="main" role="main" class="main">
-    {% include sidebar.html %}
+  <div id="main" role="main" class="main  file__archive">
 
-    <div class="archive mt-4">
+    <div class="archive mt-4 flex flex-col gap-4">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <h1 id="page-title" class="page__title">{{ page.title }}</h1>
       {% endunless %}
       {{ content }}
     </div>
+
   </div>
 
 {% endif %}

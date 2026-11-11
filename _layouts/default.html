@@ -2,19 +2,20 @@
 ---
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "es" }}" class="no-js">
+<html class="bg-[#07101c]" lang="{{ site.locale | slice: 0,2 | default: "es" }}" class="no-js ">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
 
-  <body 
-  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}{% if page.url == '/' %} home__no-sidebar-left home {% else %} home__sidebar-left {% endif %}"
+  <!-- Esto se modifica en default -->
+  <body
+  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}{% if page.url == '/' %} home__no-sidebar-left home {% else %} home__sidebar-left {% endif %} py-8"
   >
-
+    {% include_cached author-profile.html %}
+    {% include_cached masthead.html %}
     {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}    
 
     <div class="initial-content">
       {{ content }}
@@ -27,7 +28,7 @@
     {% endif %}
 
     <div class="page__footer">
-      <footer>
+      <footer class="m-auto p-auto">
         {% include footer/custom.html %}
         {% include_cached footer.html %}
       </footer>

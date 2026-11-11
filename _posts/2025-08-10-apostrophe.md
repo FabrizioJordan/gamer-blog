@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Apostrophe, un editor y visor de markdown open source"
-excerpt: "Si necesitas un editor de archivos markdown de código abierto, te presento Apostrophe"
+title: "Pokedex Realidea System Completa"
+excerpt: "Si estas empezando a jugar a Realidea System o quieres completar toda la Pokedex, te dejo esta Pokedex completa"
 date: 2025-08-10
 classes: wide
 header:
@@ -9,15 +9,11 @@ header:
   teaser_home_page: false
   icon: 
 categories:
-  - Linux
-  - Open Source
-  - TOOLS
+  - Guía
 tags:
-  - Linux
-  - Markdown
-  - Editores
-  - Open Source
-  - Office
+  - Nintendo
+  - FanGames
+  - Pokemon
 ---  
 
 Te presento Apostrophe, un editor y lector de archivos Markdown bastante elegante.
@@ -26,7 +22,7 @@ Apostrophe es un editor de Markdown muy bueno para aquellos que quieran un edito
 
 Otro agregado muy bueno y que sube el nivel es la ayuda con botones para la escritura estilo Markdown.
 
-![Línea de botones](/assets/images/2025-08-10-apostrophe/2025-08-05(apostrophe-botones).png)
+imagen rota
 
 Además contiene revisión de ortografía y vista previa en tiempo real.
 
@@ -36,11 +32,11 @@ Este editor tiene un diseño bastante atractivo, con los temas oscuro, claro y c
 
 Apostrophe en modo oscuro:
 
-![Apostrophe Modo Oscuro](/assets/images/2025-08-10-apostrophe/2025-08-05(apostrophe-dark).png)
+imagen rota
 
 Apostrophe en modo claro:
 
-![Apostrophe Modo Oscuro](/assets/images/2025-08-10-apostrophe/2025-08-05(apostrophe-light).png)
+imagen rota
 
 ### Vista previa
 
@@ -50,13 +46,13 @@ Tiene dos formas de verlo en anchura compartida.
 
 La siguiente imágen es con la anchura partida en vertical, pero también existe la anchura partida en horizontal.
 
-![Preview Partido](/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-preview-1).png)
+![Apostrophe Modo Oscuro]({{ '/assets/images/2025-08-10-apostrophe/2025-08-05(apostrophe-light).png' | relative_url }})
 
 Otras opciones que pueden gustar más son en anchura completa o verlo en una ventana aparte.
 
 La siguiente imágen es con la anchura completa.
 
-![Preview Completo](/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-preview-2).png)
+![Preview Completo]({{ '/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-preview-2).png' | relative_url }})
 
 ### Formatos para exportar
 
@@ -77,7 +73,7 @@ Y es vía paquete Flatpak.
 
 La web oficial de Flathub:
 
-[Flathub Apostrophe Apps](https://flathub.org/apps/org.gnome.gitlab.somas.Apostrophe)
+imagen rota
 
 Si deseas, te dejo el comando para instalarlo aquí mismo:
 
@@ -128,11 +124,11 @@ Apostrophe tiene bastantes atajos de teclado para mejorar la productividad del u
 
 Grupo de atajos 1:
 
-![Vista Shortcuts 1](/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-shortcuts-1).png)
+imagen rota
 
 Grupo de atajos 2:
 
-![Vista Shortcut 2](/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-shortcuts-2).png)
+imagen rota
 
 ## Otras opciones a Apostrophe
 
@@ -143,7 +139,7 @@ Existen diversas opciones para ver o editar ficheros Markdown.
 [Frogmouth](https://github.com/Textualize/frogmouth) es un visor y buscador de Markdown en la terminal. 
 No lo recomiendo por las formas de instalación (pipx, pip y brew).
 
-![Vista Frogmouth](/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-frogmouth).png)
+imagen rota
 
 <hr>
 
@@ -153,7 +149,7 @@ No lo recomiendo por las formas de instalación (pipx, pip y brew).
 
 Es un editor y visor de archivos markdown mucho más recomendable que cualquier otro, pero sobre todo por su uso mínimo de memoria RAM.
 
-![Vista Typora](/assets/images/2025-08-10-apostrophe/2025-08-06(apostrophe-typora).png)
+imagen rota
 
 <hr>
 
@@ -161,8 +157,4 @@ Es un editor y visor de archivos markdown mucho más recomendable que cualquier 
 
 [Remarkable](https://remarkableapp.github.io/) es un editor estilo vieja escuela muy horrible pero también muy completo.
 
-![Vista Typora](/assets/images/2025-08-10-apostrophe/2025-08-05(apostrophe-remarkable).png)
-
-
-
-
+imagen rota
