@@ -19,7 +19,7 @@ layout: archive
     </li>
 
     {% for tag in site.tags %}
-      {% assign matching_posts = tag.last | where_exp: "post", "post.categories contains 'Tutorial'" %}
+      {% assign matching_posts = tag.last | where_exp: "post", "post.categories contains 'Reseña'" %}
 
       {% if matching_posts.size > 0 %}
         <li>

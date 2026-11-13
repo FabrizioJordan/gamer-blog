@@ -40,7 +40,7 @@
                 {% assign url = comment[1].url %}
                 {% assign date = comment[1].date %}
                 {% assign message = comment[1].message %}
-                {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
+                {% include comments/comment.html index=forloop.index email=email name=name url=url date=date message=message %}
               {% endfor %}
             {% endif %}
           </div>
@@ -114,7 +114,7 @@
                 {% assign url = comment[1].url %}
                 {% assign date = comment[1].date %}
                 {% assign message = comment[1].message %}
-                {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
+                {% include comments/comment.html index=forloop.index email=email name=name url=url date=date message=message %}
               {% endfor %}
             {% endif %}
           </div>
